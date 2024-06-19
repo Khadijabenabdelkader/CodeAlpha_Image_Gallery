@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="buttons">
+        <input type="button" value="color pictures" onclick="showGallery('color')">
+        <input type="button" value="black and white pictures" onclick="showGallery('bw')">
+    </div>
+    <div class="full-image" id="fullimgs">
+        <img src="images/img1.jpg" id="fullimg">
+        <span onclick="closeImg()">X</span>
+    </div>
+    <div class="img-gallery">
+        <div class="color-img-gallery">
+        </div>
+        <div class="bw-img-gallery" style="display: none;">
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
